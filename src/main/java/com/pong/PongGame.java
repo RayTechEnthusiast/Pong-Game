@@ -1,7 +1,7 @@
 
-//  Class author:  ernest pedregosa delserieys
-//  Date created:  12/03/2025
-//  General description: This class contains the main game logic for a simple Pong game.
+//  Class author:  Rayan Hashmi
+//  Date created:  12/10/2025
+//  General description: This class contains main game logic for Pong game
 package com.pong;
 
 import javax.swing.*;
@@ -10,8 +10,8 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
 public class PongGame extends JPanel implements MouseMotionListener {
-    static int width = 640; // this is the amount of pixels to the right side of the screen
-    static int height = 480; // this is the amount of pixels to the top of the screen.
+    static int width = 640; // amount of pixels to right
+    static int height = 480; // amount of pixels to top
     private int userMouseY;
     private Paddle aiPaddle;
     private int playerScore;
@@ -36,14 +36,14 @@ public class PongGame extends JPanel implements MouseMotionListener {
         addMouseMotionListener(this);
         ball = new Ball(200, 200, 10, 3, Color.RED, 10);
 
-        //create any other objects necessary to play the game.
-        //create a slow down area
+        //create objects necessary to play  game
+        //create slow down area
         slowArea1 = new SlowDown(300, 275, 75, 50);
-        //create the player paddle
+        //create player paddle
         playerPaddle = new Paddle(10, 240, 50, 9, Color.WHITE);
-        //create a speed up area
+        //create  speed up area
         speedArea1 = new Speedup(300, 200, 75, 50);
-        //create a wall
+        //create wall
         wall1 = new Wall (320,75,150,10, Color.WHITE);
 
 
