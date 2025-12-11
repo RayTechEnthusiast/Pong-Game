@@ -1,3 +1,7 @@
+//Class author: Rayan Hashmi
+//Date: 12/10/2025 at precicely 11:32pm, 28 minutes before the deadline
+//Purpose: Main game logic for PongGame
+
 package com.pong;
 
 import javax.swing.*;
