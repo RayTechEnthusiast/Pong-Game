@@ -10,7 +10,7 @@ public class World {
 
 //make a PongGame and then add it to the JFrame
 public static void main(String[] args) {
-	   JFrame f = new JFrame("Pong-Game");
+	   JFrame f = new JFrame("Pong");
 	  
 	  
 	   
